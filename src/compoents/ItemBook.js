@@ -16,7 +16,7 @@ export const ItemBook = ({ data }) => {
   const dispatch = useDispatch();
 
   // console.log({ data });
-  const { nombre, apellido, telefono, id } = data;
+  const { nombre, direccion, apellido, telefono, id } = data;
   return (
     <div className="card  m-1 animate__animated animate__fadeInUp">
       <div className="card-body">
@@ -24,6 +24,8 @@ export const ItemBook = ({ data }) => {
           {nombre} {apellido}
         </h5>
         <p className="card-text">{telefono}</p>
+        <p className="card-text">{direccion}</p>
+
         <div>
           <i
             className="fa-solid fa-pen-to-square text-success"
