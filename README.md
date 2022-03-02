@@ -20,7 +20,6 @@
 | uuid                                       | 8.3.2   |
 | react-hook-form                            | 7.26.0  |
 | axios                                      | 0.26.0  |
-| react-navigation                           | 6.0.8   |
 | bootstrap                                  | 5.1.3   |
 | animate.css                                | 4.1.1   |
 
