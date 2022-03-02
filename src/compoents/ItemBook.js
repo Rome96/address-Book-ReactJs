@@ -20,12 +20,16 @@ export const ItemBook = ({ data }) => {
   return (
     <div className="card  m-1 animate__animated animate__fadeInUp">
       <div className="card-body">
-        <h5 className="card-title">
+        <h4 className="card-title">
           {nombre} {apellido}
-        </h5>
-        <p className="card-text">{telefono}</p>
-        <p className="card-text">{direccion}</p>
-
+        </h4>
+        <p className="card-text">
+          Telefono: <strong>{telefono}</strong>
+        </p>
+        <p className="card-text">
+          Dirección: <strong>{direccion}</strong>
+        </p>
+        <hr />
         <div>
           <i
             className="fa-solid fa-pen-to-square text-success"
