@@ -1,6 +1,16 @@
-import React, { useEffect } from "react";
+/**
+ * This file is part of "Address-book"
+ * Copyright (c) 2022
+ * Address-book
+ * All rights reserved
+ *
+ * @author Turiano Romero <https://github.com/Rome96 | romero.guzman18@gmail.com>
+ */
 
+import "animate.css";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+
 import { api } from "../api";
 import { ItemBook, Form } from "../compoents";
 import { getUsersList } from "../redux/actions/bookAction";
@@ -34,9 +44,9 @@ export const HomeScreen = () => {
       </div>
     );
   return (
-    <div className="container p-5 ">
+    <div className="container p-5">
       <div className="d-flex justify-content-center flex-column">
-        <h2>Address Book</h2> <hr />
+        <h2 className="animate__animated animate__fadeInDown">Address Book</h2> <hr />
         <div className="container">
           <div className="row">
             <div className="col">

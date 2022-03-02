@@ -1,8 +1,17 @@
-import React, { useEffect } from "react";
+/**
+ * This file is part of "Address-book"
+ * Copyright (c) 2022
+ * Address-book
+ * All rights reserved
+ *
+ * @author Turiano Romero <https://github.com/Rome96 | romero.guzman18@gmail.com>
+ */
+import "animate.css";
 import { v4 as uuidv4 } from "uuid";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { createUser, updateUser } from "../redux/actions/bookAction";
 import { useDispatch, useSelector } from "react-redux";
+import { createUser, updateUser } from "../redux/actions/bookAction";
 
 export const Form = () => {
   const dispatch = useDispatch();
@@ -59,7 +68,7 @@ export const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="animate__animated animate__fadeInUp">
       <input
         {...register("nombre", { required: true })}
         type="text"
